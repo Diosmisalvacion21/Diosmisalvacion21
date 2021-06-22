@@ -90,7 +90,7 @@ if(c==4)
         cout<<"EL RESULTADO ES:\n\n";
         for (int i=0;i<10;i++)
 {
-        division¨[i]=matriz1[i]/matriz2[i];
+        division[i]=matriz1[i]/matriz2[i];
 	cout<<division[i]<<"\n";
 }
 }
