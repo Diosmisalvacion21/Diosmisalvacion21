@@ -9,14 +9,14 @@ float suma[10],resta[10],producto[10],division[10];
 
 
 cout<<"OPERACIONES BASICAS CON MATRICES:\n\n";
-cout<<"¿QUE OPERACION DESEAS REALIZAR? \n";
+cout<<"Â¿QUE OPERACION DESEAS REALIZAR? \n";
 cout<<"1. Suma \n";
 cout<<"2. Resta \n";
 cout<<"3. Multiplicacion \n";
 cout<<"4. Division \n";
 cout<<"\n";
 
-//PRESENTACIÓN DE LAS MATRICES
+//PRESENTACIÃ“N DE LAS MATRICES
 cout<<"LAS MATRICES SON:\n";
 
 for (int i=0;i<10;i++)
@@ -38,62 +38,3 @@ cin>>c;
 cout<<"\n";
 
 
-//SUMA DE LAS MATRICES
-if(c==1)
-
-{
-	cout<<"USTED ESCOJIO LA OPCION DE SUMA\n\n";
-	cout<<"EL RESULTADO ES:\n\n";
-	for (int i=0;i<10;i++)
-{
-	suma[i]=matriz1[i]+matriz2[i];
-	cout<<suma[i]<<"\n";
-}
-}
-
-cout<<"******************\n\n";
-
-//RESTA DE LAS MATRICES
-if(c==2)
-
-{
-	cout<<"USTED ESCOJIO LA OPCION DE RESTA\n\n";
-	cout<<"EL RESULTADO ES:\n\n";
-	for (int i=0;i<10;i++)
-{
-	resta[i]=matriz1[i]-matriz2[i];
-	cout<<resta[i]<<"\n";
-}
-}
-
-//MULTIPLICACIÓN DE LAS MATRICES
-if(c==3)
-
-{
-	cout<<"USTED ESCOJIO LA OPCION DE MULTIPLICACION\n\n";
-	cout<<"EL RESULTADO ES:\n\n";
-	for (int i=0;i<10;i++)
-{
-	producto[i]=matriz1[i]*matriz2[i];
-	cout<<producto[i]<<"\n";
-}
-}
-
-//DIVISIÓN DE LAS MATRICES
-if(c==4)
-
-{
-	cout<<"USTED ESCOJIO LA OPCION DE DIVISION\n\n";
-	cout<<"EL RESULTADO ES:\n\n";
-	for (int i=0;i<10;i++)
-{
-	division[i]=matriz1[i]/matriz2[i];
-	cout<<division[i]<<"\n";
-}
-}
-
-
-
-return 0;
-
-}
