@@ -53,3 +53,17 @@ if(c==1)
 }
 
 cout<<"******************\n\n";
+	
+//CREADOR: EMERSON JOAO HEREDIA RUIZ
+//RESTA DE LAS MATRICES
+	if(c==2)
+
+{
+	cout<<"USTED ESCOJIO LA OPCION DE RESTA\n\n";
+	cout<<"EL RESULTADO ES:\n\n";
+	for (int i=0;i<10;i++)
+{
+	resta[i]=matriz1[i]-matriz2[i];
+	cout<<resta[i]<<"\n";
+}
+}
