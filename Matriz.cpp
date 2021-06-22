@@ -67,3 +67,20 @@ cout<<"******************\n\n";
 	cout<<resta[i]<<"\n";
 }
 }
+//CREADOR: ROMMEL JEREMY ORTIZ NAPA
+//DIVISION DE LAS MATRICES
+if(c==4)
+{
+        cout<<"USTED ESCOJIO LA OPCION DE DIVISION \n\n";
+        cout<<"EL RESULTADO ES:\n\n";
+        for (int i=0;i<10;i++)
+{
+        division¨[i]=matriz1[i]/matriz2[i];
+	cout<<division[i]<<"\n";
+}
+}
+	
+	
+	return 0;
+	
+}
