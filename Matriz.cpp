@@ -38,3 +38,18 @@ cin>>c;
 cout<<"\n";
 
 
+//CREADOR : LUIS ABRAHAN QUIÑONEZ CAICEDO
+//SUMA DE LAS MATRICES
+if(c==1)
+
+{
+	cout<<"USTED ESCOJIO LA OPCION DE SUMA\n\n";
+	cout<<"EL RESULTADO ES:\n\n";
+	for (int i=0;i<10;i++)
+{
+	suma[i]=matriz1[i]+matriz2[i];
+	cout<<suma[i]<<"\n";
+}
+}
+
+cout<<"******************\n\n";
