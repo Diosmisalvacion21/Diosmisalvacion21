@@ -54,8 +54,8 @@ if(c==1)
 
 cout<<"*******************\n\n";
 	
-//CREADOR: EMERSON JOAO HEREDIA RUIZ
-//RESTA DE LAS MATRICES
+//CREADOR: EMERSON JOAO HEREDIA RUIZ//
+//RESTA DE LAS MATRICES//
 	if(c==2)
 
 {
@@ -95,7 +95,7 @@ if(c==4)
 }
 }
 	
-
+	
 	return 0;
 	
 }
