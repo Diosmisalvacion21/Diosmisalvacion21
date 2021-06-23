@@ -52,7 +52,7 @@ if(c==1)
 }
 }
 
-cout<<"******************\n\n";
+cout<<"*******************\n\n";
 	
 //CREADOR: EMERSON JOAO HEREDIA RUIZ
 //RESTA DE LAS MATRICES
