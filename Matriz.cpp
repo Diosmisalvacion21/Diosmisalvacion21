@@ -14,7 +14,7 @@ cout<<"1. Suma \n";
 cout<<"2. Resta \n";
 cout<<"3. Multiplicacion \n";
 cout<<"4. Division \n";
-cout<<"\n";
+cout<<"\n";	
 
 //PRESENTACIÓN DE LAS MATRICES
 cout<<"LAS MATRICES SON:\n";
@@ -69,7 +69,7 @@ cout<<"******************\n\n";
 }
 	
 //CREADOR: EDIS JIPSON SOSA QUIÑONEZ
-//MULTIPLICACIÓN DE LAS MATRICES 
+//MULTIPLICACIÓN DE LAS MATRICES
 if(c==3)
 
 {
