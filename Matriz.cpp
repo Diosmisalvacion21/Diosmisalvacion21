@@ -69,7 +69,7 @@ cout<<"******************\n\n";
 }
 	
 //CREADOR: EDIS JIPSON SOSA QUIÑONEZ
-//MULTIPLICACIÓN DE LAS MATRICES
+//MULTIPLICACIÓN DE LAS MATRICES 
 if(c==3)
 
 {
