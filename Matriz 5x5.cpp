@@ -12,19 +12,6 @@ using namespace std;
 #include "colaborador4.h"     // EN ESTE ARCHIVO VA LA FUNCION DE dividir()
 #include "colaborador5.h"     // EN ESTE ARCHIVO VA LA FUNCION DE multipicar()
 
-void mostrar(float (*r)[5])
-{
-cout<<endl<<endl;
-for(int i=0;i<5;i++){
-	for(int j=0;j<5;j++){
-	      cout<<r[i][j]<<" ";
-	}
-cout<<"\n";
-	}
-
-
-
-}
 
 //FUCION PRINCIPAL
 int main()
@@ -45,33 +32,28 @@ int main()
 		case 1:
 	cout<<"ESTA FUNCION PERMITE INGRESAR EL VALOR A LAS MATRICES";
 		ingresar(matriz1,matriz2);
-		mostrar1(matriz1);
+		mostrar(matriz1);
 		mostrar2(matriz2);
 		break;
-	    case 2:
-	    
+	        case 2:
 	// ESTA FUNCION PERMITE CALCULAR EL PRODUCTO ENTRE DOS MATRICES.
 		producto(matriz1,matriz2,resultado);
 		mostrar3(resultado);
 		break;
 		case 3:
-			
 	// ESTA FUNCION PERMITE OBTENER LA POTENCIA 2 DE UNA MATRIZ.
 		potencia(matriz1,resultado);
 		mostrar4(resultado);
 		break;
 		case 4:
-			
-	// ESTA FUNCION CALCULA LA TRANSPUESTA DE LA PRIMERA MATRIZ
+	// ESTA FUNCION CALCULA LA TRANSPUEST DE LA PRIMERA MATRIZ
 		transpuesta(matriz1,resultado);
-		mostrar5(resultado);
+		mostrar5(matriz1);
 		break;
 		case 5:
-			
-	//CUADO CALCULA Y MUESTRA LAS MEDIA Y VARIANZA DE LAS DOS MATRICES
+	//CUADO CALCULA Y MUESTRA LAS MADIA Y VARIANZA DE LAS DOS MATRICES
 		mediayvarianza(matriz1,matriz2);
 		break;
-
 		}
 		  if(op!=0){
 			    cout << "Opcion no permitida !\n" <<  "Press Enter to continue\n";
@@ -92,11 +74,15 @@ int main()
 
 //COLABORADOR1_Jordy_Jorkael_Angulo_Bone
 
-void ingresar(float (*m1)[5], float (*m2)[5])
+#include<iostream>
+#include<stdlib.h>
+#include<conio.h>
+using namespace std;
+
+void ingresar(float matriz1[5][5], float matriz2[5][5])
 {
 
 cout<<"Ingresar y mostrar los valores de los arreglos o matrices \n \n";
-      float matriz1[5][5];
       cout<<"\n ENTRADA DE MATRIZ NUMERO 1:\n \n";
       for(int i=0;i<5;i++)
       {
@@ -107,7 +93,6 @@ cout<<"Ingresar y mostrar los valores de los arreglos o matrices \n \n";
         }
       } 
       
-      float matriz2[5][5];
       cout<<"\n ENTRADA DE MATRIZ NUMERO 2:\n \n";
       for(int h=0;h<5;h++)
       {
@@ -120,9 +105,8 @@ cout<<"Ingresar y mostrar los valores de los arreglos o matrices \n \n";
 
 }
 
-void mostrar1(float (*m1)[5])
+void mostrar(float matriz1[5][5])
 {
-float matriz1[5][5];
 cout<<"\nLa matriz numero 1 es\n \n ";
       for(int i=0;i<5;i++)
       {
@@ -135,9 +119,8 @@ cout<<"\nLa matriz numero 1 es\n \n ";
 
 }
 
-void mostrar2( float (*m2)[5])
+void mostrar2( float matriz2[5][5])
 {
-float matriz2[5][5];
 cout<<"\nLa matriz numero 2 es\n \n";
       for(int h=0;h<5;h++)
       {
@@ -147,13 +130,18 @@ cout<<"\nLa matriz numero 2 es\n \n";
         }
         cout<<endl;
       } 
+
 }
 
 
 
 //COLABORADOR2_Emerson_Heredia
 
-void producto(float (*m1)[5], float (*m2)[5], float (*r)[5])
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
+void producto(float matriz1[5][5], float matriz2[5][5], float resultado[5][5])
 {
 
 cout<<"Obetener el producto de las dos matrices ";
@@ -164,12 +152,13 @@ int filas=5, colum=5;
       	{
       	    for(int z=0; z<filas; ++z)
       	    {
-                r[i][j] += m1[i][z] * m2[z][j];      	    	
+                resultado[i][j] += matriz1[i][z] * matriz2[z][j];      	    	
 			  }
 		}
 	  }
 }
-void mostrar3( float (*r)[5])
+
+void mostrar3( float resultado[5][5])
 {
     cout<<"\nEl producto de las dos matrices es :\n \n ";
     int filas=5, colum=5;
@@ -177,17 +166,25 @@ void mostrar3( float (*r)[5])
       {
         for(int c=0;c<colum;c++)
         {
-            cout<<"\t"<<r[b][c];
+            cout<<"\t"<<resultado[b][c];
         }
         cout<<endl;
       } 
+
 }
+
 
 
 //COLABORADOR3_Edis_Sosa_Quiñonez
 
-void potencia(float (*m1)[5], float (*r)[5])
+#include<iostream>
+#include<stdlib.h>
+#include<conio.h>
+using namespace std;
+
+void potencia(float matriz1[5][5], float resultado[5][5])
 {
+
 cout<<"POTENCIA DE MATRICES \n \n ";
 int fila=5, colum=5;
 
@@ -196,7 +193,7 @@ int fila=5, colum=5;
       {
         for(int j=0;j<colum;j++)
         {
-           	cout<<"\t"<<m1[i][j];
+           	cout<<"\t"<<matriz1[i][j];
         }
         cout<<endl;
       } 
@@ -207,13 +204,13 @@ int fila=5, colum=5;
         {
             for(int k=0;k<fila;k++)
             {
-            	r[i][j]+=m1[i][k]*m1[k][j];
+            	resultado[i][j]+=matriz1[i][k]*matriz1[k][j];
 			}
         }
       } 
 }
 
-void mostrar4( float (*r)[5])
+void mostrar4( float resultado[5][5])
 {
       cout<<"\nLa matriz en potencia es\n \n ";
       int fila=5, colum=5;
@@ -221,16 +218,21 @@ void mostrar4( float (*r)[5])
       {
         for(int c=0;c<colum;c++)
         {
-           	cout<<"\t"<<r[b][c];
+           	cout<<"\t"<<resultado[b][c];
         }
         cout<<endl;
       } 
 }
 
 
+
 //COLABORADOR4_Luis_Abrahan_Quiñonez_Caicedo
 
-void transpuesta(float (*m1)[5], float (*r)[5])
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
+void transpuesta(float matriz1[5][5], float resultado[5][5])
 {
 
 cout<<"Obtener la transpuesta de una matriz";
@@ -238,13 +240,14 @@ cout<<"Obtener la transpuesta de una matriz";
 cout<<"\nMatriz Normal\n";
 	for(int i=0;i<5;i++){
 		for(int j=0;j<5;j++){
-			cout<<m1[i][j]<<" ";
+			cout<<matriz1[i][j]<<" ";
 		}
 		cout<<"\n";
 	}
 
 }
-void mostrar5( float (*r)[5])
+
+void mostrar5( float matriz1[5][5])
 {
 
 cout<<"Obtener la transpuesta de una matriz";
@@ -252,21 +255,27 @@ cout<<"Obtener la transpuesta de una matriz";
 cout<<"\nMatriz Transpuesta\n";
 	for(int i=0;i<5;i++){
 		for(int j=0;j<5;j++){
-			cout<<r[j][i]<<" ";
+			cout<<matriz1[j][i]<<" ";
 		}
 		cout<<"\n";
 	}
+
 }
 
 
 //COLABORADOR5
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
 void mediayvarianza(float (*m1)[5], float (*m2)[5])
 {
 
-cout<<"Determinar  cual de las 2 matrices tiene la mayor media y varianza";
+cout<<"Determinar  cual de las 2 matrices tiene la mayor media y varianza \n \n";
 float x,a=0,m,arr[30],a2=0,v;
     int c=0,l;
     cout<<" ¿Cuantos numero va a ingresa <30? : "; cin>>l;
+    cout<<endl<<endl;
 
 do{
 
@@ -288,5 +297,6 @@ c=c+1;
 }while(c<l);
 v=a2/l;
 
-cout<<" La media es "<<m<<" La virianza es  "<<v<<endl;
+cout<<"\n La media es "<<m<<" La virianza es "<<v<<endl<<endl;
+
 }
