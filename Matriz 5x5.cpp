@@ -225,8 +225,7 @@ void mostrar4( float resultado[5][5])
 }
 
 
-
-//COLABORADOR4_Luis_Abrahan_Quiñonez_Caicedo
+COLABORADOR4 LUIS ABRAHAN QUIÑONEZ CAICEDO
 
 #include<iostream>
 #include<stdlib.h>
