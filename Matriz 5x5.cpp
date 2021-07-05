@@ -107,7 +107,7 @@ cout<<"Ingresar y mostrar los valores de los arreglos o matrices \n \n";
 
 void mostrar(float matriz1[5][5])
 {
-cout<<"\nLa matriz numero 1 es\n \n ";
+cout<<"\nLa matriz numero 1 es:\n \n ";
       for(int i=0;i<5;i++)
       {
         for(int j=0;j<5;j++)
@@ -121,7 +121,7 @@ cout<<"\nLa matriz numero 1 es\n \n ";
 
 void mostrar2( float matriz2[5][5])
 {
-cout<<"\nLa matriz numero 2 es\n \n";
+cout<<"\nLa matriz numero 2 es:\n \n";
       for(int h=0;h<5;h++)
       {
         for(int k=0;k<5;k++)
