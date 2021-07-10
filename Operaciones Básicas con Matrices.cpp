@@ -27,7 +27,7 @@ int main()
 	cout<<"4.- Mostrar la transpuesta de la primera matriz \n";
 	cout<<"5.- Calcular la media y varianza y compararlas \n";
 	cout<<"0.- Salir del menu \n";
-        cout<<" Ingrese una opción : "; cin>>op;
+        cout<<" Ingrese una opciÃ³n : "; cin>>op;
 	switch(op){
 		case 1:
 	cout<<"ESTA FUNCION PERMITE INGRESAR EL VALOR A LAS MATRICES";
@@ -67,5 +67,66 @@ int main()
 	}while(op!=0);
 
 	return(0);
+
+}
+
+
+//COLABORADOR #1 ANGULO BONE JORDY JORKAEL
+#include<iostream>
+#include<stdlib.h>
+#include<conio.h>
+using namespace std;
+
+void ingresar(float matriz1[5][5], float matriz2[5][5])
+{
+
+cout<<"Ingresar y mostrar los valores de los arreglos o matrices \n \n";
+      cout<<"\n ENTRADA DE MATRIZ NUMERO 1:\n \n";
+      for(int i=0;i<5;i++)
+      {
+        for(int j=0;j<5;j++)
+        {
+            cout<<"\ns["<<i<<"]["<<j<<"]=  ";
+            cin>>matriz1[i][j];
+        }
+      } 
+      
+      cout<<"\n ENTRADA DE MATRIZ NUMERO 2:\n \n";
+      for(int h=0;h<5;h++)
+      {
+        for(int k=0;k<5;k++)
+        {
+            cout<<"\ns["<<h<<"]["<<k<<"]=  ";
+            cin>>matriz2[h][k];
+        }
+      } 
+
+}
+
+void mostrar(float matriz1[5][5])
+{
+cout<<"\nLa matriz numero 1 es\n \n ";
+      for(int i=0;i<5;i++)
+      {
+        for(int j=0;j<5;j++)
+        {
+            cout<<"\t"<<matriz1[i][j];
+        }
+        cout<<endl;
+      } 
+
+}
+
+void mostrar2( float matriz2[5][5])
+{
+cout<<"\nLa matriz numero 2 es\n \n";
+      for(int h=0;h<5;h++)
+      {
+        for(int k=0;k<5;k++)
+        {
+            cout<<"\t"<<matriz2[h][k];
+        }
+        cout<<endl;
+      } 
 
 }
