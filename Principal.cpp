@@ -4,11 +4,7 @@
 #include<malloc.h>
 #include<fstream>
 using namespace std;
-#include "colaborador1.h"
-#include "colaborador2.h"
-#include "colaborador3.h"
-#include "colaborador4.h"
-#include "colaborador5.h"
+#include "miclase.h"
 int main()
 {
 	//int dn, mn, an,da, ma, aa; 
@@ -29,28 +25,28 @@ int main()
         cout<<" Ingrese una opcion : "; cin>>op;
 	switch(op){
 		case 1:
-	//CÓDIGO PARA CALCULAR DATOS DEL USUARIO.
+	//CÃ“DIGO PARA CALCULAR DATOS DEL USUARIO.
 	cout<<"\n Recopilacion de datos personales del usuario";
 	pepin.ingresar();
     pepin.mostrar(); 
 		break;
 	        case 2:
-	//CÓDIGO PARA CALCULAR LA EDAD DEL USUARIO.
+	//CÃ“DIGO PARA CALCULAR LA EDAD DEL USUARIO.
 	cout<<"\n Calcular la edad del usuario\n\n";
 		pepin.digitar(aa,ma,da);
 		break;
 		case 3:
-	//CÓDIGO PARA CALCULAR EL INDICE DE MASA CORPORAL.
+	//CÃ“DIGO PARA CALCULAR EL INDICE DE MASA CORPORAL.
 	cout<<"\ncalcular el indice de masa corporal\n\n";
 		pepin.set_masa(p);
 		break;
 		case 4:
-	//CÓDIGO PARA GUARAR LOSDATOS EN ARCHIVO TXT.
+	//CÃ“DIGO PARA GUARAR LOSDATOS EN ARCHIVO TXT.
 	cout<<"\nEsta opcion permite guardar los datos en un archivo de texto\n\n";
 		pepin.save();
 		break;
 		case 5:
-	//CÓDIGO PARA MOSTRAR LOS DATOS DEL ARCHIVO.
+	//CÃ“DIGO PARA MOSTRAR LOS DATOS DEL ARCHIVO.
 	cout<<"\nmostrar los datos del archivo de texto\n\n";
 		pepin.lectura();
 		break;
