@@ -41,6 +41,37 @@ class Persona{
 		cout<<dn<<"\t";
 		
 		}
+
+//LUIS ABRAHAN QUIÑONEZ CAICEDO
+	void digitar(int aa, int ma, int da){
+		an=0;
+		mn=0;
+		dn=0;
+	cout<<"digite la fecha actual (aa mm dd):  ";cin>>aa;cin>>ma;cin>>da;
+	cout<<"digite su fecha de nacimiento (aa mm dd):  ";cin>>an;cin>>mn;cin>>dn;
+	
+	if(da>dn){
+		d = da - dn;
+	}
+	else{
+		da = da+30;
+		ma = ma-1;
+		d = da - dn;
+	}
+	if(ma>mn){
+		m = ma - mn;
+	}
+	else{
+		ma = ma+12;
+		aa= aa-1;
+		m = ma - mn;
+	}
+	
+	a = aa - an;
+	
+	cout<<"Su edad es:  "<<a<<" años con "<<m<<" meses y "<<d<<" dias.";
+	
+}
                ******************************************
 	       // ROMMEL ORTIZ NAPA //
 	       ******************************************
