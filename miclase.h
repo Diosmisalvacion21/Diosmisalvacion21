@@ -1,3 +1,4 @@
+//ANGULO BONE JORDY JORKAEL
 class Persona{
 	
 	private:
